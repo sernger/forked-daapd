@@ -1985,7 +1985,7 @@ raop_session_make(struct output_device *rd, int family, output_status_cb cb, boo
 	break;
 
       case RAOP_DEV_OTHER:
-	rs->encrypt = re->encrypt;
+	rs->encrypt = 1;
 	rs->auth_quirk_itunes = 0;
 	break;
     }
